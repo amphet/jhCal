@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context="com.example.hjh.drawtest.DayActivity"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:layout_rowWeight="10"
+    android:layout_columnWeight="10"
+    >
+
+    <fragment class="com.example.hjh.drawtest.YearMonthFragment"
+        android:id="@+id/yearmonthfragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="3"
+        android:layout_rowWeight="1"
+
+        tools:layout="@layout/fragment_year_month" />
+
+
+    <fragment class="com.example.hjh.drawtest.TimelineFragment"
+        android:id="@+id/timelinefragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="6"
+        android:layout_rowWeight="9"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_rowSpan="3"
+
+        tools:layout="@layout/fragment_timeline" />
+
+
+    <fragment class="com.example.hjh.drawtest.ScheduleFragment"
+        android:id="@+id/schedulefragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="4"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment class="com.example.hjh.drawtest.TodayFragment"
+        android:id="@+id/todayfragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_row="1"
+
+        tools:layout="@layout/fragment_today" />
+
+
+
+    <fragment class="com.example.hjh.drawtest.TodoFragment"
+        android:id="@+id/todofragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="4"
+        android:layout_rowWeight="4"
+        android:layout_column="1"
+        android:layout_row="3"
+
+
+        tools:layout="@layout/fragment_todo" />
+
+
+
+</GridLayout>

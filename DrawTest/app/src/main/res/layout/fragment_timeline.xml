@@ -1,0 +1,21 @@
+<com.example.hjh.drawtest.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timelinescroll"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:clickable="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.example.hjh.drawtest.TimelineFragment"
+        android:orientation="vertical"
+        android:id="@+id/timelinescrolllayout"
+        android:clickable="false">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+    </LinearLayout>
+</com.example.hjh.drawtest.CustomScrollView>
